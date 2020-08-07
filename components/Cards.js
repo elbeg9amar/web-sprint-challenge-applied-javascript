@@ -46,10 +46,9 @@ axios.get('https://lambda-times-api.herokuapp.com/articles')
         allDataBox.push(index)
     })
 
-    
-    console.log(allDataBox)
-    const articleSpot = document.querySelector('.cards-container')
 
+    const articleSpot = document.querySelector('.cards-container')
+    
     allDataBox.forEach(index => {
         articleSpot.appendChild(articleDiv(index))
     });
